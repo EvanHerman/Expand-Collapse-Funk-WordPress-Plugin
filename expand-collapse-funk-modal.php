@@ -1,6 +1,6 @@
 <style>
 input#inputExpansionLink { width:100%; }
-textarea#inputHiddenContent { width:100%; height:200px; resize:none; }
+textarea#inputHiddenContent { width:100%; max-height:250px; height:200px; resize:vertical; }
 #TB_ajaxContent { height:690px !important; width:637px !important; overflow-y:scroll; overflow-x:hidden; }
 #TB_window {width:667px !important; overflow:hidden; margin-top:-1em !important; height:725px !important; }
 .expand-content-link { font-weight:bold; margin:.5em 0 .5em 0; display:inline; }
@@ -30,6 +30,7 @@ textarea#inputHiddenContent { width:100%; height:200px; resize:none; }
   background:linear-gradient(to bottom,#eaeaea 0%,#f5f5f5 16%,#f5f5f5 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea',endColorstr='#f5f5f5',GradientType=0);
 }
+.pluginByContent { float:right; display:block; margin-top:-2.5em; }
 @font-face {
 	font-family: "ecf-icons";
 	src: url("fonts/ecf-icons.eot");
@@ -441,4 +442,5 @@ jQuery(document).ready(function() {
 
 	echo '<div class="exp-col-content-holder"><a class="expand-content-link" href="#">Expand/Collapse Text+Images</a><div class="hidden-content"><img src="../wp-content/plugins/expand-collapse-funk/toggle_expand.png" alt="Expand/Collapse Demo Image" /> This is all of your hidden content. Anything in this section will be hidden by default. Clicking the expansion link will display all of the hidden content.</div></div>';
 	*/
+	echo '<span class="pluginByContent"><p class="description">Plugin Created By <a target="_blank" href="http://www.evan-herman.com">Evan Herman</a></p></span>';
 ?>

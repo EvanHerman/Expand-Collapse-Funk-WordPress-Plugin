@@ -49,6 +49,7 @@ function expand_collapse_functionality_everywhere() {
 			.exp-col-content-holder+p, .exp-col-content-holder img+p, .expand-content-link+p { display:none !important; }
 			.ecf_opened:before { font-family: "ecf-icons"; content: "\e601  ";  font-size:16px; }
 			.hiddenContentp { margin:0 !important; }
+			.hiddenContentp+p { display:none;}
 			.hidden-content img { width:20%; }
 			.hidden-content img.alignright { margin-right:0 !important; margin-left:10px; margin-bottom:0px; }
 			.hidden-content img.alignleft { margin-left:0 !important; margin-right:10px; margin-bottom:0px; }

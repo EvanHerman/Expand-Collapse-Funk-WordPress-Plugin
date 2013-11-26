@@ -1,14 +1,14 @@
 === Plugin Name ===
 Contributors: eherman24
 Donate link: http://evan-herman.com/contact
-Tags: xpand, Accordion, collapsable content, collapse, collapsible, display, expand, expandable, expandable content, hidden, hide, javascript, jquery, Collapse-O-Matic, more, read me, read more, roll-your-own, shortcode, twinpictures, hidden content
+Tags: xpand, Accordion, collapsable content, collapse, collapsible, display, expand, expandable, expandable content, hidden, hide, javascript, jquery, Collapse-O-Matic, more, read me, read more, roll-your-own, shortcode, twinpictures, hidden content, collapseable content
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily add expand and collapse functionality to any WordPress theme. No coding skills required! Beautifully simple UI. Save space with this plugin for generating hidden content and links to reveal the content.
+Easily add expand and collapse functionality to any WordPress theme. No coding skills required! Beautifully simple UI. Save space with this plugin for generating collapseable content and links to reveal the content.
 
 == Description ==
 
@@ -30,8 +30,18 @@ http://www.youtube.com/watch?v=fiNUqZxFwNA
 1. SEO friendly hidden content
 1. Great Support
 
-Using Expand+Collapse Funk allows for very easy placement of hidden content and a link to reveal the content. The expand and collapse functionality is widely
-used across the web to free up space on a page or to place semi-important content into posts. There is no limit to the length of the hidden content. Easily include images,
+If you want to include Expand+Collapse Funk you can use the following code anywhere in your Theme: (remember to swap out the Link and Hidden Content for your content)
+`
+<div class="exp-col-content-holder"><a class="expand-content-link" href="#">This Is The Link To Click</a>
+	<div class="hidden-content">
+		<p class="hiddenContentp">This is all of your hidden content. This will be invisible at first, but after clicking on the link above this will slide in.</p>
+	</div>
+</div>
+`
+
+
+Using Expand+Collapse Funk allows for very easy placement of collapseable content and a link to reveal the content. The expand and collapse functionality is widely
+used across the web to free up space on a page or to place semi-important content into posts, pages or into the sidebar. There is no limit to the length of the collapseable content. Easily include images,
 YouTube/Vimeo videos or anything else you could imagine.
 
 I originally built this plugin for the marketing department at my full time job, so a simple UI and ease of use was kept in mind throughout development.
@@ -46,13 +56,36 @@ Have an idea, question, concern or found a bug?<a href="http://www.evan-herman.c
 1. Input the necessary fields, and click insert.
 1. Publish the post or page and enjoy Expand+Collapse Functionality!
 
+== Frequently Asked Questions ==
+
+= Do I need to know how to write code to use this plugin? =
+
+No. No coding knowledge is required. I have created this plugin with ease of use for the end user in mind. You type everything in to input fields and the code is generated for you automagically.
+
+= Is there a limit to the length or what can be included inside the hidden content? =
+
+No. You can include anything from text and images to YouTube videos. The possibilities are endless! There is also no limit to the length of the content inside of the hidden content.
+
+= Can I only use Expand+Collapse Funk in the content area of my site? =
+
+No, you can actually include the code literally anywhere on your site. You can use the generated code in widgets to display collapseable content in your sidebar, or you can copy and paste the generated code
+into your Footer.php template file to display hidden content in the footer. You can literally use the code anywhere you choose. (check the Description section for sample code)
+
+= Is this plugin going to cause issues with any of my existing plugins? =
+
+Most likely not. I've written the plugin following WordPress plugin best practices. All of the jQuery included in the plugin is written in No Conflict mode so as to already be compatible with the jQuery version pre-loaded with WordPress.
+
+= I would like to include feature X, Can I help with development? =
+
+Of course you can! I am always looking for developers to colaborate with. All of the plugins I develop are added to my <a href="https://github.com/EvanHerman"> GitHub Account</a> and seperated in to their own repositories. Send me a pull request!
+
 == Screenshots ==
 
 1. Expand+Collapse Funk creates a custom tinyMCE icon in the visual editor for very easy use.
-2. The Expand+Collapse Funk modal
-3. Example of very simple  YouTube video integration
-4. Example of generated links on a page
-5. Example of expandedl inks showing hidden content.
+2. The Expand+Collapse Funk modal on edit/new post or page screen
+3. Example of very simple YouTube video integration inside collapseable content.
+4. Example of generated collapsed links on a page.
+5. Example of expanded links showing hidden content.
 
 == Changelog ==
 
